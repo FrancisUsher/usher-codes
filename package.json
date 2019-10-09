@@ -5,7 +5,8 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "s3-deploy './dist/**' --cwd './dist/' --region 'us-west' --bucket 'usher.codes' --gzip"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -27,9 +28,11 @@
     "lint-staged": "^8.1.5",
     "node-sass": "^4.9.0",
     "prettier": "^1.18.2",
+    "s3-deploy": "^1.4.0",
     "sass": "^1.17.4",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-vuetify": "^0.6.3",
+    "vue-cli-plugin-webpack-bundle-analyzer": "^1.4.0",
     "vue-template-compiler": "^2.6.10",
     "vuetify-loader": "^1.2.2"
   },
