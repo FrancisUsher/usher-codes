@@ -1,5 +1,5 @@
 <template>
-    <v-bottom-navigation grow>
+    <v-bottom-navigation fixed grow>
         <v-btn text :to="{ name: 'home' }">
             <span>Home</span>
             <v-icon>mdi-home</v-icon>
