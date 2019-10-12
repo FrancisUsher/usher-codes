@@ -6,7 +6,8 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "deploy": "s3-deploy './dist/**' --cwd './dist/' --region 'us-west' --bucket 'usher.codes' --gzip"
+    "clean-cdn": "aws s3 rm s3://usher.codes --recursive",
+    "up-cdn": "aws s3 cp dist/. s3://usher.codes/ --recursive --acl public-read --content-encoding 'gzip'"
   },
   "dependencies": {
     "core-js": "^2.6.5",
@@ -28,7 +29,6 @@
     "lint-staged": "^8.1.5",
     "node-sass": "^4.9.0",
     "prettier": "^1.18.2",
-    "s3-deploy": "^1.4.0",
     "sass": "^1.17.4",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-vuetify": "^0.6.3",
