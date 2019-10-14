@@ -5,8 +5,8 @@
             <v-icon>mdi-home</v-icon>
         </v-btn>
         <v-btn text :to="{ name: 'career' }">
-            <span>Résumé</span>
-            <v-icon>mdi-file-document</v-icon>
+            <span>Career</span>
+            <v-icon>mdi-account-card-details</v-icon>
         </v-btn>
         <v-btn text :to="{ name: 'keyboards' }">
             <span>Keyboards</span>
