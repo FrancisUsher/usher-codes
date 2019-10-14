@@ -23,6 +23,7 @@
         <v-btn
             href="https://github.com/FrancisUsher/usher-codes/tree/boring-material"
             target="_blank"
+            rel="noreferrer"
             text
         >
             <div class="d-none d-sm-flex align-center">
