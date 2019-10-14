@@ -8,5 +8,14 @@
 export default {
     name: 'homePage',
     components: {},
+    metaInfo: {
+        title: "Francis Usher's home page.",
+        description:
+            'The homepage of a mind-bendingly awesome personal website.',
+        htmlAttrs: {
+            lang: 'en',
+            amp: true,
+        },
+    },
 };
 </script>

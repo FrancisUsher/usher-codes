@@ -23,6 +23,14 @@ import jobCard from './components/job-card';
 export default {
     name: 'career',
     components: { jobCard },
+    metaInfo: {
+        title: "Francis Usher's career page.",
+        description: 'Software Engineering Résumé in web and PDF formats.',
+        htmlAttrs: {
+            lang: 'en',
+            amp: true,
+        },
+    },
     data() {
         return {
             jobs: [
