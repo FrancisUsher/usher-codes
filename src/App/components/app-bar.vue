@@ -24,19 +24,23 @@
             href="https://github.com/FrancisUsher/usher-codes/tree/boring-material"
             target="_blank"
             rel="noreferrer"
+            aria-label="View source on Github"
             text
         >
             <div class="d-none d-sm-flex align-center">
                 <span>Source</span>
-                <v-icon>mdi-open-in-new</v-icon>
+                <v-icon>{{ mdiOpenInNew }}</v-icon>
             </div>
 
-            <v-icon class="d-flex d-sm-none">mdi-github-circle</v-icon>
+            <v-icon class="d-flex d-sm-none" alt="View source on Github">{{
+                mdiGithubCircle
+            }}</v-icon>
         </v-btn>
     </v-app-bar>
 </template>
 
 <script>
+import { mdiOpenInNew, mdiGithubCircle } from '@mdi/js';
 export default {
     name: 'app-bar',
     computed: {
@@ -48,6 +52,12 @@ export default {
             }
             return 'codes';
         },
+    },
+    data() {
+        return {
+            mdiOpenInNew,
+            mdiGithubCircle,
+        };
     },
 };
 </script>
