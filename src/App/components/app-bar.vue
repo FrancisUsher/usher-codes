@@ -12,7 +12,7 @@
         <v-spacer></v-spacer>
         <v-btn :to="{ name: 'career' }" class="d-none d-sm-flex" text>
             <span>
-                <span>Résumé</span>
+                <span>Career</span>
             </span>
         </v-btn>
         <v-btn :to="{ name: 'keyboards' }" class="d-none d-sm-flex" text>
@@ -32,9 +32,9 @@
                 <v-icon>{{ mdiOpenInNew }}</v-icon>
             </div>
 
-            <v-icon class="d-flex d-sm-none" alt="View source on Github">{{
-                mdiGithubCircle
-            }}</v-icon>
+            <v-icon class="d-flex d-sm-none" alt="View source on Github">
+                {{ mdiGithubCircle }}
+            </v-icon>
         </v-btn>
     </v-app-bar>
 </template>
