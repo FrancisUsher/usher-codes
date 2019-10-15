@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "clean-cdn": "aws s3 rm s3://usher.codes --recursive",
-    "up-cdn": "aws s3 cp dist/. s3://usher.codes/ --recursive --acl public-read --content-encoding 'gzip'"
+    "up-cdn": "aws s3 cp dist/. s3://usher.codes/ --recursive --acl public-read"
   },
   "dependencies": {
     "core-js": "^2.6.5",
