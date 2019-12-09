@@ -21,9 +21,34 @@ export default new Router({
         },
         {
             path: '/career',
-            name: 'career',
             component: () =>
                 import(/* webpackChunkName: "career" */ './pages/career'),
+            children: [
+                {
+                    path: '',
+                    name: 'career',
+                    component: () =>
+                        import(
+                            /* webpackChunkName: "career" */ './pages/career/home'
+                        ),
+                },
+                {
+                    path: 'nxoc',
+                    name: 'career-nxoc',
+                    component: () =>
+                        import(
+                            /* webpackChunkName: "career" */ './pages/career/nexon-oc'
+                        ),
+                },
+                {
+                    path: 'nxa',
+                    name: 'career-nxa',
+                    component: () =>
+                        import(
+                            /* webpackChunkName: "career" */ './pages/career/nexon-america'
+                        ),
+                },
+            ],
         },
     ],
 });
